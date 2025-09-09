@@ -12,8 +12,8 @@ const Header = () => {
       <div className="container-fluid">
         <a className="navbar-brand" href="eslint-disable-next-line">ORIGINIK</a>        
         <div className="d-flex">
-          <button className="btn btn-outline-primary me-2" onClick={() => changeLanguage('en')}>English</button>
-          <button className="btn btn-outline-primary" onClick={() => changeLanguage('mr')}>Marathi</button>
+          <button className="animated-button me-2" onClick={() => changeLanguage('en')}><span>English</span></button>
+          <button className="animated-button" onClick={() => changeLanguage('mr')}><span>Marathi</span></button>
         </div>
       </div>
     </nav>

@@ -11,7 +11,7 @@ const ProductCategoryCard = ({ category, image }) => {
         <img src={image} className="card-img-top product-card-img" alt={t(category)} />
         <div className="card-body">
           <h5 className="card-title">{t(category)}</h5>
-          <Link to={`/category/${category.toLowerCase().replace(/ /g, '-')}`} className="btn btn-primary">View Products</Link>
+          <Link to={`/category/${category.toLowerCase().replace(/ /g, '-')}`} className="animated-button"><span>View Products</span></Link>
         </div>
       </div>
     </div>
