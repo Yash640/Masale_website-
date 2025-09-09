@@ -2,14 +2,18 @@ import React from 'react';
 import ProductCategoryCard from '../components/ProductCategoryCard';
 import dryFruitsImage from '../assets/dry-fruits.jpg';
 import rawMasaleImage from '../assets/raw-masale.jpg';
+import MilletImage from '../assets/Millets.jpg';
+import SnacksImage from '../assets/Healthy-snacks.jpg';
+import PicklesImage from '../assets/Pickles.jpg';
+import HomemadeMasaleImage from '../assets/HomemadeMasale.jpg';
 
 const categories = [
   { name: "Dry Fruits", image: dryFruitsImage },
   { name: "Raw Masale", image: rawMasaleImage },
-  { name: "Millets", image: `https://placehold.co/300x200?text=Millets` },
-  { name: "Healthy Snacks", image: `https://placehold.co/300x200?text=Healthy+Snacks` },
-  { name: "Pickles", image: `https://placehold.co/300x200?text=Pickles` },
-  { name: "Homemade Masale", image: `https://placehold.co/300x200?text=Homemade+Masale` },
+  { name: "Millets", image: MilletImage},
+  { name: "Healthy Snacks", image: SnacksImage },
+  { name: "Pickles", image: PicklesImage },
+  { name: "Homemade Masale", image: HomemadeMasaleImage },
 ];
 
 const HomePage = () => {
