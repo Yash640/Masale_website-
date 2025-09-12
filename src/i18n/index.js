@@ -16,7 +16,8 @@ i18n
           "Badam": "Almonds",
           "Cashew": "Cashews",
           "Anjeer": "Figs",
-          "Berries": "Berries"
+          "Berries": "Berries",
+          "View Products": "View Products"
         }
       },
       mr: {
@@ -30,7 +31,8 @@ i18n
           "Badam": "बदाम",
           "Cashew": "काजू",
           "Anjeer": "अंजीर",
-          "Berries": "बेरी"
+          "Berries": "बेरी",
+          "View Products": "उत्पादने पहा"
         }
       }
     },

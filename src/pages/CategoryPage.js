@@ -4,11 +4,11 @@ import { useTranslation } from 'react-i18next';
 
 const subProducts = {
   'dry-fruits': ["Badam", "Cashew", "Anjeer", "Berries"],
-  'raw-masale': [],
-  'millets': [],
-  'healthy-snacks': [],
-  'pickles': [],
-  'homemade-masale': []
+  'raw-masale': ["A", "B", "C", "D", "E", "F", "G"],
+  'millets': ["A", "B", "C", "D", "E", "F", "G"],
+  'healthy-snacks': ["A", "B", "C", "D", "E", "F", "G"],
+  'pickles': ["A", "B", "C", "D", "E", "F", "G"],
+  'homemade-masale': ["A", "B", "C", "D", "E", "F", "G"]
 };
 
 const CategoryPage = () => {
@@ -17,9 +17,14 @@ const CategoryPage = () => {
 
   const products = subProducts[categoryName] || [];
 
+  const formattedCategoryName = categoryName
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+
   return (
     <div className="container mt-4">
-      <h2>{t(categoryName.replace(/-/g, ' '))}</h2>
+      <h2>{t(formattedCategoryName)}</h2>
       <div className="row">
         {products.length > 0 ? (
           products.map(product => (
