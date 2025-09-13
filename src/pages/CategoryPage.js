@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const subProducts = {
   'dry-fruits': ["Badam", "Cashew", "Anjeer", "Berries"],
-  'raw-masale': ["A", "B", "C", "D", "E", "F", "G"],
+  'raw-masale': ["Turmeric", "B", "C", "D", "E", "F", "G"],
   'millets': ["A", "B", "C", "D", "E", "F", "G"],
   'healthy-snacks': ["A", "B", "C", "D", "E", "F", "G"],
   'pickles': ["A", "B", "C", "D", "E", "F", "G"],

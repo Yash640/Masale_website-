@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="eslint-disable-next-line">ORIGINIK</a>        
+        <a className="navbar-brand logo" href="eslint-disable-next-line">ORIGINIK</a>        
         <div className="d-flex">
           <button className="language-button me-2" onClick={() => changeLanguage('en')}>English</button>
           <button className="language-button" onClick={() => changeLanguage('mr')}>Marathi</button>
