@@ -1,12 +1,19 @@
 body {
   margin: 0;
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F8F8F8;
+  color: #333333;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
 }

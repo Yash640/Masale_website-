@@ -6,7 +6,7 @@ const ProductCategoryCard = ({ category, image }) => {
   const { t } = useTranslation();
 
   return (
-    <div className="col-md-4 mb-4">
+    <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
       <div className="card product-card">
         <img src={image} className="card-img-top product-card-img" alt={t(category)} />
         <div className="card-body">

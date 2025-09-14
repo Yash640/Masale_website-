@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const subProducts = {
   'dry-fruits': ["Badam", "Cashew", "Anjeer", "Berries"],
@@ -28,11 +29,12 @@ const CategoryPage = () => {
       <div className="row">
         {products.length > 0 ? (
           products.map(product => (
-            <div className="col-md-4 mb-4" key={product}>
-              <div className="card">
-                <img src={`https://placehold.co/300x200?text=${product}`} className="card-img-top" alt={t(product)} />
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={product}>
+              <div className="card product-card">
+                <img src={`https://placehold.co/300x200?text=${product}`} className="card-img-top product-card-img" alt={t(product)} />
                 <div className="card-body">
                   <h5 className="card-title">{t(product)}</h5>
+                  <Link to={`/subcategory/${product.toLowerCase().replace(/ /g, '-')}`} className="animated-button"><span>{t('View Products')}</span></Link>
                 </div>
               </div>
             </div>
